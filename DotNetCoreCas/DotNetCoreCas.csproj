@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Marvin S. Addison,Scott Battaglia,Scott Holodak,Misagh Moayyed,William G. Thompson,Jr.,Catherine D. Winfrey,Blair Allen,Jason Kanaris,Jacob Lewinski</Authors>
+    <Description>A CAS client for asp.net core</Description>
+    <Copyright />
+    <PackageProjectUrl>https://github.com/JLewinski/dotnet-cas-client-with-core/tree/DotnetCore</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/JLewinski/dotnet-cas-client-with-core/blob/DotnetCore/LICENSE.txt</PackageLicenseUrl>
+    <PackageReleaseNotes>Simplifies the integration of CAS into the project and allows for greater customization so that only one SignIn is necessary if needing to give users roles</PackageReleaseNotes>
+    <PackageTags>core, CAS, authentication</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>2.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\jzl0155\source\repos\dotnet-cas-client\DotNetCoreCas\DotNetCoreCas.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\jzl0155\source\repos\dotnet-cas-client\DotNetCoreCas\DotNetCoreCas.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
