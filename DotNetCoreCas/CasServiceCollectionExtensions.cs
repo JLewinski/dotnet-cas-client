@@ -78,7 +78,7 @@ namespace DotNetCoreCas
                 options.LoginPath = "/Cas/Login";
                 options.LogoutPath = "/Cas/Logout";
                 options.Cookie.Name = "CasAuth";
-                options.Cookie.Expiration = new System.TimeSpan(3, 0, 0);
+                options.ExpireTimeSpan = new System.TimeSpan(3, 0, 0);
                 options.Cookie.SameSite = SameSiteMode.Strict;
                 options.ReturnUrlParameter = "redirect";
             });
